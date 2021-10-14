@@ -1,0 +1,82 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - application-development
+dependsOn:
+  open:
+    - name: Postgresql
+      optional: false
+      version: ''
+      versionMax: '9.6'
+      versionMin: '9.2'
+  proprietary:
+    - name: Redhat JBOSS
+      optional: false
+      version: '6.4 EAP'
+      versionMax: ''
+      versionMin: ''
+description:
+  it:
+    features:
+      - Inserimento richieste di analisi
+      - Invio richieste di analisi
+      - Ricerca richieste di analisi
+      - Stampa richieste di analisi
+      - Pagamento richieste di analisi
+      - Caricamento risultati di analisi
+      - Emissione dei referti delle analisi
+    genericName: Analisi chimiche campioni biologici
+    localisedName: AGRICHIM
+    longDescription: |
+      Il cittadino o il tecnico delegato che si e' autenticato nell'applicazione di front office (AGRCFO) puo':
+        - inserire le richieste di analisi relative a campioni biologici (terreni)
+        - pagare la richieste con PagoPA
+        - modificare le proprie informazioni anagrafiche
+        - consultare i risultati delle analisi a conclusione delle stesse da parte dei tecnici dei laboratori regionali
+      Il tecnico del laboratorio regionale che si s' autenticato nell'applicazione di back office (AGRCBO) puo':
+        - consultare l'elenco delle richieste di analisi inoltrate
+        - registrare i risultati delle analisi richieste con l'applicazione di front office
+        - emettere i referti delle analisi
+        - gestire le anagrafiche delle organizzazioni dei tecnici delegati e le anagrafiche di clienti e utenti
+    shortDescription: |
+      Il sistema permette richiesta, pagamento, gestione e refertazione di analisi chimiche di campioni biologici
+developmentStatus: stable
+it:
+  conforme:
+    gdpr: true
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: true
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: true
+    pagopa: false
+    spid: true
+  riuso:
+    codiceIPA: r_piemon
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: Regione Piemonte
+  repoOwner: Regione Piemonte
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: false
+maintenance:
+  contacts:
+    - email: michele.pianta@csi.it
+      name: Michele Pianta'
+  type: community
+name: AGRICHIM
+platforms:
+  - web
+releaseDate: '2021-10-15'
+softwareType: standalone/web
+softwareVersion: 4.1.4
+url: 'https://github.com/regione-piemonte/agrichim'
+usedBy:
+  - Regione Piemonte
