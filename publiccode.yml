@@ -4,7 +4,7 @@
 
 publiccodeYmlVersion: '0.2'
 categories:
-  - application-development
+  - erp
 dependsOn:
   open:
     - name: Postgresql
@@ -13,37 +13,96 @@ dependsOn:
       versionMax: '9.6'
       versionMin: '9.2'
   proprietary:
-    - name: Redhat JBOSS
+    - name: RedHat JBoss
       optional: false
-      version: '6.4 EAP'
+      version: EAP 6.4
       versionMax: ''
       versionMin: ''
 description:
   it:
     features:
-      - Inserimento richieste di analisi
-      - Invio richieste di analisi
-      - Ricerca richieste di analisi
-      - Stampa richieste di analisi
-      - Pagamento richieste di analisi
-      - Caricamento risultati di analisi
-      - Emissione dei referti delle analisi
+      - Inserimento richieste di analisi terreni e altre matrici
+      - Invio richieste di analisi terreni e altre matrici
+      - Ricerca richieste di analisi terreni e altre matrici
+      - Stampa richieste di analisi terreni e altre matrici
+      - Pagamento richieste di analisi terreni e altre matrici
+      - Caricamento risultati di analisi terreni
+      - Emissione dei referti delle analisi terreni
+      - PNRR
+      - PNRR/Beneficiari/Enti Regionali
+      - PNRR/Misure/1.4.1
+      - PNRR/Misure/1.4.4
     genericName: Analisi chimiche campioni biologici
-    localisedName: AGRICHIM
-    longDescription: |
-      Il cittadino o il tecnico delegato che si e' autenticato nell'applicazione di front office (AGRCFO) puo':
-        - inserire le richieste di analisi relative a campioni biologici (terreni)
-        - pagare la richieste con PagoPA
-        - modificare le proprie informazioni anagrafiche
-        - consultare i risultati delle analisi a conclusione delle stesse da parte dei tecnici dei laboratori regionali
-      Il tecnico del laboratorio regionale che si s' autenticato nell'applicazione di back office (AGRCBO) puo':
-        - consultare l'elenco delle richieste di analisi inoltrate
-        - registrare i risultati delle analisi richieste con l'applicazione di front office
-        - emettere i referti delle analisi
-        - gestire le anagrafiche delle organizzazioni dei tecnici delegati e le anagrafiche di clienti e utenti
-    shortDescription: |
-      Il sistema permette richiesta, pagamento, gestione e refertazione di analisi chimiche di campioni biologici
+    longDescription: |+
+      Il cittadino o il tecnico delegato che si e' autenticato nell'applicazione
+
+
+      di front office (AGRCFO) puo':
+
+
+
+
+      - inserire le richieste di analisi relative a campioni biologici (terreni
+
+
+      e altre matrici)
+
+
+
+      - pagare la richieste con PagoPA
+
+
+
+      - modificare le proprie informazioni anagrafiche
+
+
+
+      - consultare i risultati delle analisi a conclusione delle stesse da parte
+
+
+      dei tecnici dei laboratori regionali
+
+
+
+
+      Il tecnico del laboratorio regionale che si e' autenticato
+
+
+      nell'applicazione di back office (AGRCBO) puo':
+
+
+
+
+      - consultare l'elenco delle richieste di analisi inoltrate
+
+
+
+      - registrare i risultati delle analisi richieste con l'applicazione di
+
+
+      front office
+
+
+
+      - emettere i referti delle analisi
+
+
+
+      - gestire le anagrafiche delle organizzazioni dei tecnici delegati e le
+
+
+      anagrafiche di clienti e utenti
+
+    shortDescription: |-
+      Il sistema permette richiesta, pagamento, gestione e refertazione di
+
+      analisi chimiche di campioni biologici di terreni e altre matrici
 developmentStatus: stable
+intendedAudience:
+  countries:
+    - it
+  scope:
+    - agriculture
 it:
   conforme:
     gdpr: true
@@ -56,12 +115,8 @@ it:
     cie: true
     pagopa: false
     spid: true
-  riuso:
-    codiceIPA: r_piemon
 legal:
   license: EUPL-1.2
-  mainCopyrightOwner: Regione Piemonte
-  repoOwner: Regione Piemonte
 localisation:
   availableLanguages:
     - it
